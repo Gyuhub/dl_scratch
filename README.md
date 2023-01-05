@@ -15,6 +15,7 @@ Implementing neural networks from scratch is a main purpose of this repository.
 - matplotlib
 
 # Directory structures
+```text
 ├── data (dataset will be contained)
 ├── dl_scratch (source scripts)
 │   ├── common (common modules for neural network)
@@ -22,3 +23,4 @@ Implementing neural networks from scratch is a main purpose of this repository.
 ├── LICENSE
 ├── README.md
 └── setup.py
+```
