@@ -4,7 +4,7 @@
 <img src="./data/images/deep_learning_from_scratch.jpg"
      alt="Image of the book"
      title="Deep learning from scratch"
-     style="display: block; margin-left: auto; margin-right: auto; width: 50%;"/>
+     style="display: block; margin-left: auto; margin-right: auto; width: 20%; text-align: center"/>
 
 Implementing neural networks from scratch is a main purpose of this repository.
 
