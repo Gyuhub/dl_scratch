@@ -1,3 +1,5 @@
 *.vscode
 *.pyc
 **/__pycache__
+build/**
+dl_scratch.egg-info/**
