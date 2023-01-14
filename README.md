@@ -14,6 +14,13 @@ Implementing neural networks from scratch is a main purpose of this repository.
 - numpy
 - matplotlib
 
+# Installation
+After cloning this repository, please type the below command
+```
+cd ~/$[your_workspace]
+pip install dl_scratch
+```
+
 # Directory structures
 ```text
 ├── data (dataset will be contained)
