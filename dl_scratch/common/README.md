@@ -1,4 +1,4 @@
 ## Description
 | file name | file purpose |
 |:-- |:-- |
-| functions | implementation of functions for neural networks |
+| functions.py | implementation of functions for neural networks |
