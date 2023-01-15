@@ -25,8 +25,8 @@ pip install dl_scratch
 ```text
 ├── data (dataset will be contained)
 ├── dl_scratch (source scripts)
-│   ├── common (common modules for neural network)
-│   └── main.py (main script for execution)
+│   ├── ch3 (practice codes for chapter 3)
+│   └── common (common modules for neural network)
 ├── LICENSE
 ├── README.md
 └── setup.py
