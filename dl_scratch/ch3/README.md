@@ -7,4 +7,4 @@
 | view_funcs.py | plot result of common functions |
 
 ## Notification
-:bulb: If you want to execute the **forward.py**, you should move your working directory into here because of file I/O.
+:bulb: If you want to execute the **forward.py**, you should move your working directory into right here(<ins>dl_scratch/ch3</ins>) because of file I/O.
