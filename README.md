@@ -18,6 +18,7 @@ Implementing neural networks from scratch is a main purpose of this repository.
 After cloning this repository, please type the below command
 ```
 cd ~/$[your_workspace]
+git clone https://github.com/Gyuhub/dl_scratch.git
 pip install dl_scratch
 ```
 
@@ -26,6 +27,7 @@ pip install dl_scratch
 ├── data (dataset will be contained)
 ├── dl_scratch (source scripts)
 │   ├── ch3 (practice codes for chapter 3)
+│   ├── ch4 (practice codes for chapter 4)
 │   └── common (common modules for neural network)
 ├── LICENSE
 ├── README.md
