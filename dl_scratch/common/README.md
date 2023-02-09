@@ -2,3 +2,4 @@
 | file name | file purpose |
 |:-- |:-- |
 | functions.py | implementation of functions for neural networks |
+| gradient.py | implementation of numerical gradient for neural networks |
