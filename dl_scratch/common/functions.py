@@ -7,6 +7,9 @@ def step(x):
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
+def sigmoid_grad(x):
+    return (1.0 - sigmoid(x)) * sigmoid(x)
+
 def relu(x):
     return np.maximum(x, 0)
 
@@ -14,18 +17,26 @@ def identity(x):
     return x
 
 def softmax(x):
-    x_max = np.max(x)
-    x_exp = np.exp(x - x_max)
-    x_exp_sum = np.sum(x_exp)
-    return x_exp / x_exp_sum
+    if x.ndim == 2:
+        x = x.T
+        x = x - np.max(x, axis=0)
+        y = np.exp(x) / np.sum(np.exp(x), axis=0)
+        return y.T 
+
+    x = x - np.max(x) # due to softmax
+    return np.exp(x) / np.sum(np.exp(x))
 
 def sum_squares_error(y, t):
     return 0.5 * np.sum((y-t)**2)
 
 def cross_entropy_error(y, t):
-    if y.dim == 1:
+    if y.ndim == 1:
         t = t.reshape(1, t.size)
         y = y.reshape(1, y.size)
 
+    # if train data is encoded with one-hot-label, convert it to index of the test label
+    if t.size == y.size:
+        t = t.argmax(axis=1)
+             
     batch_size = y.shape[0]
     return -np.sum(np.log(y[np.arange(batch_size), t] + 1e-7)) / batch_size
