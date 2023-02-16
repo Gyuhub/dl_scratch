@@ -29,6 +29,7 @@ pip install dl_scratch
 │   ├── ch3 (practice codes for chapter 3)
 │   ├── ch4 (practice codes for chapter 4)
 │   ├── ch5 (practice codes for chapter 5)
+│   ├── ch6 (practice codes for chapter 5)
 │   └── common (common modules for neural network)
 ├── LICENSE
 ├── README.md

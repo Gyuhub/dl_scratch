@@ -4,3 +4,4 @@
 | functions.py | implementation of functions for neural networks |
 | gradient.py | implementation of numerical gradient for neural networks |
 | layers.py | implementation of layers for backpropagation |
+| optimizers.py | implementation of optimizers for neural network learning |
