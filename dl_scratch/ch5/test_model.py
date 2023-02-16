@@ -1,3 +1,5 @@
+# test the model which trained with two_layered_network_learning.py
+
 from dl_scratch.common import *
 from data.mnist import load_mnist
 import dl_scratch

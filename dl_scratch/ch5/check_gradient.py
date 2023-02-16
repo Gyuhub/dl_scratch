@@ -1,3 +1,5 @@
+# check gradient of backpropagation with gradient of numerical method
+
 from dl_scratch.common import *
 from data.mnist import load_mnist
 import dl_scratch
