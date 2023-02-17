@@ -1,4 +1,4 @@
-# class module of two layered neural network
+# class module of four layered neural network
 
 from dl_scratch.common import *
 from collections import OrderedDict
