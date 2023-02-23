@@ -1,6 +1,7 @@
 ## Description
 | file name | file purpose |
 |:-- |:-- |
+| compare_batch_norm_mnist.py | script for comparing effect of batch normalization with MNIST dataset |
 | compare_init_weight_mnist.py | script for comparing initialization values with MNIST dataset |
 | compare_init_weight.py | script for comparing output of activation function about various initial weights |
 | compare_optimizer_mnist.py | script for comparing optimizers(SGD, Momentum, AdaGrad, Adam) with MNIST dataset |
