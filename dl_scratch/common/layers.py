@@ -125,7 +125,7 @@ class BatchNormLayer:
           return out.reshape(*self.input_shape)
 
      def __forward(self, x, train_flag):
-          if self.rolling_mean == None:
+          if self.rolling_mean is None:
                N, D = x.shape
                self.rolling_mean = np.zeros(D)
                self.rolling_var = np.zeros(D)
@@ -143,11 +143,11 @@ class BatchNormLayer:
                self.xhat = xhat
 
                # Exponential Moving Average (EMA)
-               self.rolling_mean = self.momentum * self.rolling_mean (1 - self.momentum) * mu
-               self.rolling_var = self.momentum * self.rolling_var (1 - self.momentum) * var
+               self.rolling_mean = self.momentum * self.rolling_mean + (1 - self.momentum) * mu
+               self.rolling_var = self.momentum * self.rolling_var + (1 - self.momentum) * var
           else:
                xd = x - self.rolling_mean
-               xhat = xd / (np.sqrt(self.running_var + 10e-7))
+               xhat = xd / (np.sqrt(self.rolling_var + 10e-7))
           
           out = self.gamma * xhat + self.beta
           return out
