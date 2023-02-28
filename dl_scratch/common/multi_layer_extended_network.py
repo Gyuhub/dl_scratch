@@ -50,8 +50,8 @@ class MultiLayeredExtendedNet:
 
             self.layers['Activation_function' + str(idx)] = activation_layer[activation]()
 
-            # if self.use_dropout:
-            #     self.layers['Dropout' + str(idx)] = Dropout(dropout_ration)
+            if self.use_dropout:
+                self.layers['Dropout' + str(idx)] = DropoutLayer(dropout_ration)
 
         idx = self.hidden_layer_num + 1
         self.layers['Affine' + str(idx)] = AffineLayer(self.params['W' + str(idx)],
