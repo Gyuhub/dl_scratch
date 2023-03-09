@@ -8,3 +8,4 @@
 | multi_layer_network.py | multi layered neural network |
 | optimizers.py | implementation of optimizers for neural network learning |
 | trainer.py | implementation of trainer which train neural network alternatively |
+| utils.py | utilize neural network learning |
