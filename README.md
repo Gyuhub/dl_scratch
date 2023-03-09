@@ -22,14 +22,15 @@ git clone https://github.com/Gyuhub/dl_scratch.git
 pip install dl_scratch
 ```
 
-# Directory structures
+# Directory structure
 ```text
 ├── data (dataset will be contained)
 ├── dl_scratch (source scripts)
 │   ├── ch3 (practice codes for chapter 3)
 │   ├── ch4 (practice codes for chapter 4)
 │   ├── ch5 (practice codes for chapter 5)
-│   ├── ch6 (practice codes for chapter 5)
+│   ├── ch6 (practice codes for chapter 6)
+│   ├── ch7 (practice codes for chapter 7)
 │   └── common (common modules for neural network)
 ├── LICENSE
 ├── README.md
